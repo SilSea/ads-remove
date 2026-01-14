@@ -10,5 +10,9 @@ const adsList = [
     '[class*="widget-header-area"]',
     '[class*="manga-single-widget-ads]',
     '[class*="kln"]',
-    '[class*="tt_bfx"]'
+    '[class*="tt_bfx"]',
+    '[data-widget_type="image.default"]',
+    '[id*="banner-left"]',
+    '[id*="banner-right"]',
+    '[id*="banner-bottom"]'
 ]
