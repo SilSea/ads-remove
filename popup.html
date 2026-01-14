@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* กล่องแสดงสถานะ */
+    .status-box {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .status-label {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    /* ข้อความ ON/OFF */
+    #statusText {
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+    }
+
+    /* สีสำหรับสถานะ */
+    .text-on { color: #28a745; text-shadow: 0 0 10px rgba(40, 167, 69, 0.2); }
+    .text-off { color: #dc3545; text-shadow: 0 0 10px rgba(220, 53, 69, 0.2); }
+
+    /* ปุ่มกด */
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: all 0.2s;
+      color: white;
+    }
+
+    /* สีปุ่ม (จะสลับกับสถานะเพื่อให้รู้ว่ากดเพื่อทำอะไร) */
+    .btn-disable { background-color: #dc3545; } /* ปุ่มแดง (ไว้กดปิด) */
+    .btn-disable:hover { background-color: #c82333; }
+
+    .btn-enable { background-color: #28a745; } /* ปุ่มเขียว (ไว้กดเปิด) */
+    .btn-enable:hover { background-color: #218838; }
+
+    hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+    .footer { font-size: 10px; color: #aaa; }
+  </style>
+</head>
+<body>
+
+  <h3>Ads Remove</h3>
+
+  <div class="status-box">
+    <span class="status-label">Current Status</span>
+    <span id="statusText">...</span> </div>
+
+  <button id="toggleBtn">Loading...</button>
+
+  <div class="footer">Created for personal use</div>
+
+  <script src="script/popup.js"></script>
+</body>
+</html>
